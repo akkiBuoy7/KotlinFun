@@ -1,8 +1,9 @@
 /*
 Must have a val or var param1 in primary const
 Prints the value directly instead of memory references
-Can extract value directly into variables from object
+Destructuring declarations -> Can extract value directly into variables from object
 Provides copy function to change a particular value only of the object
+Can use == to compare data classes as values are compared 
  */
 
 

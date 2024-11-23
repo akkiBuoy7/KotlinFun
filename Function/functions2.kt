@@ -17,13 +17,20 @@ fun String.reverseF():String{
     return result.toString().lowercase()
 }
 
+// extension function with parameter
 fun Int.isGreaterThan(num:Int) :Boolean = this > num
 
+
+/*
+infix with operator
+ */
 class Header(val name:String)
 
-infix fun Header.plus(other:Header):Header{
+infix operator fun Header.plus(other:Header):Header{
 return Header(this.name+other.name)
 }
+
+
 
 fun main(){
     val rev  =  "Akash".reverseF()
@@ -33,7 +40,11 @@ fun main(){
     val h1 = Header("AKASH ")
     val h2 = Header("SAHA")
 
-    val result = h1 plus h2
+    val result = h1 plus h2 // without using "." as infix used
+
+    val result2 = h1 + h2  // using + as operator used
 
     println(result.name)
+
+    println(result2.name)
 }

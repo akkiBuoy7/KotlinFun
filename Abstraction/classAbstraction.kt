@@ -1,3 +1,7 @@
+/*
+Abstract class can not be initalised by making object
+ */
+
 abstract class Calculator(){
     abstract fun calc(x:Int,y:Int):Int
 }
@@ -11,8 +15,8 @@ return x*y
 class Add:Calculator(){
     override fun calc(x:Int,y:Int):Int{
     return x+y
-    }
-    }
+}
+}
 
 fun main(){
     val obj = Multiple()

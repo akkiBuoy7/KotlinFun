@@ -14,11 +14,11 @@ class Carnivore(override val name : String):Animal(name){
 fun main(){
     val animal = Animal("animal")
 
-   println( animal.details()) // will print animal
+   println(animal.details()) // will print animal
 
    val carnivore = Carnivore("tiger")
 
-   println( carnivore.details()) // will print tiger
+   println(carnivore.details()) // will print tiger
 
    println(carnivore.callSuper()) // calling super
 }

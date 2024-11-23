@@ -27,11 +27,11 @@ class Person(val _name:String,var age:Int = 32, var _designation:String, var _le
        println("init bloc $_name  $age $designation")
 
     }
-
+    // calling primary constructor
     constructor(name: String) : this(name, 32, "Guest", "Entry"){
         println("constructor $_name  $age $designation")
     }
-
+    // calling secondary constructor
     constructor(name: String,age: Int) : this(name){
         println("constructor 2 $_name  $age $designation")
     }
@@ -48,7 +48,7 @@ fun main(){
 
     // will call init bloc first and then secondary constructor
     val person2 = Person( "Saha")
-
+    // will call init bloc first, then secondary constructor, then third constructor
     val person3 = Person( "Saha",29)
 
 }

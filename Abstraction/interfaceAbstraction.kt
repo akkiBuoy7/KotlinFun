@@ -2,6 +2,9 @@
 Interfaces can have concrete methods also
 Multiple interfaces can be implemented
 overriding can be done both in primary constructor or within body
+If multiple interfaces are implemented and has same method name
+then need to implement this method else will lead to ambiguity
+Can use super keyword to call the common method
  */
 
 interface LivingBeing{
@@ -56,7 +59,7 @@ class Cow():Animal,LivingBeing{
         println("Breathes oxygen")
     }
 
-    override fun commonMethod(){
+    override fun commonMethod(){ // calling common method of both the interfaces using super keyword
         super<Animal>.commonMethod()
     }
 
